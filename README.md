@@ -31,7 +31,7 @@ Durante o desenvolvimento, foram abordados:
 
 🏗️ Arquitetura do Sistema
 
-O intuito deste projeto é demonstrar como o encapsulamento funciona na prática para organizar informações de maneira segura e simples. Na classe Aluno, os dados são protegidos e acessados apenas através de métodos validados, permitindo que os dados sejam manipulados de forma controlada, essa classe também possui construtores sobrecarregados, permitindo a criação de objetos com diferentes níveis de informação (apenas RA ou RA e nome) garantindo flexibilidade ao código, já a classe principal ExEncapsCinco é responsável por instanciar os objetos e executar o programa, exibindo os dados dos alunos por meio dos métodos de acesso. Tudo isso contribui para que a lógica de manipulação de dados esteja sempre centralizada e protegida.
+O intuito deste projeto é demonstrar como o encapsulamento funciona na prática para organizar informações de maneira segura e simples. Na classe Aluno, os dados são protegidos e acessados apenas através de métodos validados, permitindo que os dados sejam manipulados de forma controlada, essa classe também possui construtores sobrecarregados, permitindo a criação de objetos com diferentes níveis de informação (apenas RA ou RA e nome) garantindo flexibilidade ao código, já a classe principal ExEncapsCinco é responsável por instanciar os objetos e executar o programa, exibindo os dados dos alunos por meio dos métodos de acesso. O uso do modificador private cria uma 'caixa-preta' onde a integridade do RA do aluno é preservada. Isso evita que, em sistemas maiores, o identificador único de um aluno seja alterado acidentalmente por outras partes do software, garantindo a consistência do banco de dados fictício da aplicação. Tudo isso contribui para que a lógica de manipulação de dados esteja sempre centralizada e protegida.
 
 💻 Tecnologias Utilizadas
 
@@ -49,7 +49,18 @@ Compile e execute a classe principal
 
 🧪 Exemplo do Projeto
 
-O programa demonstra como os atributos de uma classe podem ser protegidos utilizando modificadores de acesso, permitindo que a manipulação dos dados ocorra de forma controlada por meio de métodos específicos.
+Entrada Base (no código):
+
+Aluno 1: Apenas RA (125)
+
+Aluno 2: RA (125) e Nome ("Fulano")
+
+Saída no Console:
+
+125
+
+125
+Fulano
 
 📌 Aprendizados
 
